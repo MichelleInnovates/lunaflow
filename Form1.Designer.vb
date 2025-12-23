@@ -28,6 +28,9 @@ Partial Class Form1
         btnGo = New Button()
         Label1 = New Label()
         lblAnswer = New Label()
+        Button1 = New Button()
+        BtnHistory = New Button()
+        BtnClear = New Button()
         CType(numCycle, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -82,11 +85,41 @@ Partial Class Form1
         lblAnswer.Size = New Size(0, 15)
         lblAnswer.TabIndex = 5
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(0, 0)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 6
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' BtnHistory
+        ' 
+        BtnHistory.Location = New Point(281, 157)
+        BtnHistory.Name = "BtnHistory"
+        BtnHistory.Size = New Size(120, 23)
+        BtnHistory.TabIndex = 7
+        BtnHistory.Text = "View History"
+        BtnHistory.UseVisualStyleBackColor = True
+        ' 
+        ' BtnClear
+        ' 
+        BtnClear.Location = New Point(298, 201)
+        BtnClear.Name = "BtnClear"
+        BtnClear.Size = New Size(75, 23)
+        BtnClear.TabIndex = 8
+        BtnClear.Text = "Clear Data"
+        BtnClear.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(BtnClear)
+        Controls.Add(BtnHistory)
+        Controls.Add(Button1)
         Controls.Add(lblAnswer)
         Controls.Add(Label1)
         Controls.Add(btnGo)
@@ -106,5 +139,8 @@ Partial Class Form1
     Friend WithEvents btnGo As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lblAnswer As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnHistory As Button
+    Friend WithEvents BtnClear As Button
 
 End Class
